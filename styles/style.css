@@ -107,3 +107,41 @@ height: 104px;
 .courses{
     display: flex;
 }
+
+/* Media Quary */
+
+@media  only screen and (max-width:688px) {
+
+    .container{
+        width: 100%;
+       
+    }
+    .players , .blogs  {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player , .article-blog , .courses{
+        flex-direction: column;
+    }
+
+ 
+    
+}
+
+/* tablat screen  */
+
+@media  only screen and (min-width:689px) and (max-width:992Px) {
+    .container{
+        width: 100%;
+    }
+
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs , .courses{
+
+        grid-template-columns: repeat(1,1fr);
+    }
+    .article-blog ,.courses{
+        flex-direction: column;
+    }
+}
